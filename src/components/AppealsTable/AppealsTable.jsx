@@ -11,7 +11,7 @@ export default function AppealsTable({ appeals, pageSize = 10, onRowClick }) {
     return appeals.slice(start, start + pageSize);
   }, [appeals, page, pageSize]);
 
-  // Если данных стало меньше и текущая страница "вылетела" — вернемся назад
+  // Если данных стало меньше и текущая страница "вылетела", тоь вернемся назад
   if (page > totalPages) setPage(totalPages);
 
   return (
@@ -109,5 +109,5 @@ function badgeKind(status) {
   const s = String(status || "").toLowerCase();
   if (s.includes("реш")) return "success";
   if (s.includes("откл")) return "danger";
-  return "warning"; // "В работе"
+  return "warning"; 
 }
