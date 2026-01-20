@@ -1,18 +1,55 @@
-# React + Vite
+# Appeals Visualization SPA
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Одностраничное веб-приложение (SPA) для визуализации обращений граждан.
+Проект выполнен в рамках тестового задания на позицию Frontend-разработчика.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠 Стек технологий
 
-## React Compiler
+- React
+- JavaScript (ES6)
+- Vite
+- HTML5 / CSS3
+- React-Leaflet
+- OpenStreetMap
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+## 🚀 Функциональность
 
-## Expanding the ESLint configuration
+- Загрузка данных обращений из `data.json`
+- Отображение обращений в таблице:
+  - ID
+  - Категория
+  - Адрес
+  - Статус
+  - Дата регистрации
+- Пагинация (10 записей на страницу)
+- Фильтрация по статусу (В работе / Решено / Отклонено)
+- Поиск по категории и адресу
+- Визуализация обращений на карте:
+  - маркеры по координатам
+  - popup с краткой информацией
+- Детальная карточка обращения:
+  - открывается при клике на строку таблицы
+  - открывается при клике на маркер на карте
+- Адаптивный интерфейс (desktop / tablet)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🗺 Карта
+
+Для отображения карты используется библиотека **React-Leaflet**  
+Источник карт — **OpenStreetMap**.
+
+Каждое обращение отображается на карте в виде маркера на основе координат
+`latitude` и `longitude`.
+
+---
+
+## 📦 Установка и запуск проекта
+
+### 1. Установить зависимости
+```bash
+npm install
