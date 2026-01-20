@@ -1,0 +1,62 @@
+.filtersCard {
+  background: #fff;
+  border-radius: 14px;
+  padding: 14px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  margin-bottom: 14px;
+}
+
+.filtersRow {
+  display: flex;
+  gap: 12px;
+  align-items: end;
+  flex-wrap: wrap;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 220px;
+}
+
+.field--grow {
+  flex: 1;
+  min-width: 260px;
+}
+
+.field--btn {
+  min-width: 120px;
+}
+
+.label {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.select, .input {
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.15);
+  padding: 0 12px;
+  background: #fff;
+  font-size: 14px;
+  outline: none;
+}
+
+.select:focus, .input:focus {
+  border-color: rgba(0,0,0,0.35);
+}
+
+.btn {
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.15);
+  background: #fff;
+  cursor: pointer;
+  padding: 0 12px;
+}
+
+.btn:hover {
+  background: rgba(0,0,0,0.03);
+}

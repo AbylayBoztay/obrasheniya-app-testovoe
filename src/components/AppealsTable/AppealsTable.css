@@ -1,0 +1,110 @@
+.tableCard {
+  background: #fff;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+}
+
+.tableHeader {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.tableHeader h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.tableMeta {
+  font-size: 13px;
+  opacity: 0.75;
+}
+
+.tableWrap {
+  width: 100%;
+  overflow: auto;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+.table th, .table td {
+  padding: 12px 10px;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  text-align: left;
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+.table thead th {
+  background: rgba(0,0,0,0.03);
+  font-weight: 600;
+}
+
+.row {
+  cursor: pointer;
+}
+
+.row:hover {
+  background: rgba(0,0,0,0.03);
+}
+
+.empty {
+  text-align: center;
+  padding: 18px;
+  opacity: 0.7;
+}
+
+.pager {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.15);
+  background: #fff;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pageInfo {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  border: 1px solid rgba(0,0,0,0.12);
+}
+
+.badge--success {
+  background: rgba(0, 180, 80, 0.12);
+}
+
+.badge--warning {
+  background: rgba(255, 170, 0, 0.14);
+}
+
+.badge--danger {
+  background: rgba(230, 40, 40, 0.12);
+}
